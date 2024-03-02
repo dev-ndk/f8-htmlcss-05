@@ -25,3 +25,103 @@ button {
     font-family: inherit;
     font-size: inherit;
 }
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    --line-height: 52px;
+    --btn-color: #212832;
+    display: inline-block;
+    padding: 0 16px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: calc(var(--line-height) - 2px);
+    min-width: 113px;
+    border-radius: 6px;
+    background: var(--btn-color);
+    border: 1px solid var(--btn-color);
+    transition: 0.2s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Header */
+
+.header-fixed {
+    position: sticky;
+    top: -30px;
+    z-index: 1;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    padding: 42px 0 12px;
+}
+
+.navbar {
+    margin-left: 47px;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-item__link {
+    display: block;
+    margin: 0 23.5px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */ /* 175% */
+    transition: 0.2s;
+}
+
+.header-action {
+    margin-left: auto;
+}
+
+.navbar-item__link:hover,
+.navbar-item__link--active {
+    position: relative;
+    color: #212832;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar-item__link--active::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    inset: auto 0 0 0;
+    border-radius: 0.5px;
+    background: #7264d6;
+}
+
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__login {
+    display: inline-block;
+    padding: 12px 28px;
+    color: #212832;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
