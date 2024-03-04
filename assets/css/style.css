@@ -146,8 +146,14 @@ a {
 
 /* Hero */
 
+.hero {
+    margin-top: 64px;
+}
+
 .hero__inner {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hero-content__label {
@@ -170,6 +176,7 @@ a {
 
 .hero-content__heading {
     width: 500px;
+    margin-top: 12px;
 }
 
 .hero-content__heading--custom {
@@ -184,6 +191,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     column-gap: 8px;
     margin-top: 40px;
     padding: 8px;
@@ -192,6 +200,22 @@ a {
     border-radius: 8px;
     background: #fff;
     box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-form:has(:invalid:not(:placeholder-shown))::after {
+    display: inline-block;
+}
+
+.hero-form::after {
+    position: absolute;
+    content: "Vui lòng nhập đúng email";
+    display: none;
+    left: 8px;
+    bottom: -26px;
+    color: #ff0000;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.75; /* 175% */
 }
 
 .hero-form__input {
@@ -216,12 +240,21 @@ a {
     min-width: 149px;
 }
 
+.hero-form:has(:invalid) .hero-form__submit {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 .hero-content__ps {
-    margin-top: 20px;
+    margin-top: 25px;
     color: #696d76;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.71; /* 171.429% */
+}
+
+.hero-media {
+    position: relative;
 }
 
 .hero-media__thumb {
@@ -230,4 +263,100 @@ a {
 
 .hero-media__img {
     height: 100%;
+}
+
+.hero-media__inner {
+    position: relative;
+    margin-right: 174px;
+}
+
+.hero-media__card-deposite {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 113px;
+    left: -100px;
+    padding: 14px 10px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-media__deposite-icon {
+    color: #8376e2;
+    margin-right: 8px;
+}
+
+.hero-media__deposite {
+    margin-right: 19px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.hero-media__deposite-money {
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.hero-media__card-secured {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 61px;
+    right: -74px;
+    padding: 20px 14px;
+    border-radius: 10px;
+    background: #439f90;
+}
+
+.hero-media__secured-icon {
+    color: #439f90;
+    margin-right: 11px;
+}
+
+.hero-media__secured-money {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.hero-media__secured {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.hero-media__card-interest {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 127px;
+    right: 0;
+    width: 130px;
+    height: 130px;
+    background: #da6464;
+    border-radius: 50%;
+}
+
+.hero-media__interest-percent {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-media__interest {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
 }
