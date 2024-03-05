@@ -502,18 +502,19 @@ a {
 .feature__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 160px;
     align-items: center;
     justify-content: space-between;
+}
+
+.feature-content {
+    width: 470px;
 }
 
 .feature-content__heading {
     margin-top: 12px;
     font-size: 4rem;
     line-height: 1.25; /* 125% */
-}
-
-.feature-content__desc {
-    width: 470px;
 }
 
 .feature-content__list {
@@ -652,4 +653,93 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.4;
+}
+.feature-media-inner {
+    position: relative;
+    width: 470px;
+}
+.feature-media__img-wrap--bottom {
+    position: relative;
+    height: 600px;
+}
+
+.feature-media__img-wrap--bottom::after {
+    position: absolute;
+    content: url(../svg/feature-svg-2.svg);
+    inset: auto 0 -2.5px 0;
+}
+
+.feature-media__img--bottom {
+    position: relative;
+    display: block;
+    height: 100%;
+    margin: 0 28px;
+    z-index: 1;
+}
+
+.feature-media__choose-card {
+    position: absolute;
+    bottom: 57px;
+    right: -74px;
+    z-index: 1;
+    padding: 28px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 44px 48px 0px #0000001a;
+}
+
+.feature-media__choose-title {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.choose-item__icon-wrap {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.feature-media__money-icon-wrap,
+.choose-item__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose-item__icon {
+    width: 63px;
+    height: 48px;
+    border-radius: 4px;
+    background: #f2f2fa;
+    transition: 0.2s;
+}
+
+.choose-item__icon:last-child {
+    background: #f9ea63;
+}
+
+.choose-item__icon:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.feature-media__money-icon-wrap {
+    position: absolute;
+    top: -35px;
+    right: -26px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #7264d6;
+    box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.1);
+}
+
+.feature-content-bottom {
+    margin-left: auto;
 }
