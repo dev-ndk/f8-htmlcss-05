@@ -94,6 +94,12 @@
 
         <!-- Styles CSS -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- Header -->
@@ -196,7 +202,13 @@
                         </section>
                         <div class="hero-media">
                             <div class="hero-media__inner">
-                                <div class="hero-media__card-deposite">
+                                <div
+                                    class="hero-media__card-deposite"
+                                    data-aos="fade-right"
+                                    data-aos-delay="450"
+                                    data-aos-duration="1000"
+                                    data-aos-once="true"
+                                >
                                     <svg
                                         class="hero-media__deposite-icon"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -228,9 +240,19 @@
                                         src="./assets/img/hero-img-1.png"
                                         alt="Digital Payment For Everyone."
                                         class="hero-media__img"
+                                        data-aos="fade-up"
+                                        data-aos-delay="200"
+                                        data-aos-duration="1000"
+                                        data-aos-once="true"
                                     />
                                 </figure>
-                                <div class="hero-media__card-secured">
+                                <div
+                                    class="hero-media__card-secured"
+                                    data-aos="fade-left"
+                                    data-aos-delay="750"
+                                    data-aos-duration="1000"
+                                    data-aos-once="true"
+                                >
                                     <svg
                                         class="hero-media__secured-icon"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -259,7 +281,13 @@
                                 </div>
                             </div>
 
-                            <div class="hero-media__card-interest">
+                            <div
+                                class="hero-media__card-interest"
+                                data-aos="zoom-in"
+                                data-aos-delay="650"
+                                data-aos-duration="1000"
+                                data-aos-once="true"
+                            >
                                 <p class="hero-media__interest-percent">0%</p>
                                 <p class="hero-media__interest">Interest</p>
                             </div>
@@ -277,9 +305,19 @@
                                     src="./assets/img/work-img-1.png"
                                     alt="How It Works"
                                     class="work-media__img"
+                                    data-aos="flip-left"
+                                    data-aos-delay="200"
+                                    data-aos-duration="800"
+                                    data-aos-once="true"
                                 />
                             </figure>
-                            <div class="work-media__activated-card">
+                            <div
+                                class="work-media__activated-card"
+                                data-aos="flip-down"
+                                data-aos-delay="250"
+                                data-aos-duration="800"
+                                data-aos-once="true"
+                            >
                                 <div class="work-media__activated-icon">
                                     <div class="work-media__activated-circle">
                                         <svg
@@ -385,7 +423,13 @@
                             </a>
                         </section>
                         <div class="feature-media">
-                            <div class="feature-media__send-money">
+                            <div
+                                class="feature-media__send-money"
+                                data-aos="zoom-out-left"
+                                data-aos-delay="450"
+                                data-aos-duration="800"
+                                data-aos-once="true"
+                            >
                                 <div class="feature-media__send-icon">
                                     <svg
                                         width="20"
@@ -426,9 +470,19 @@
                                     src="./assets/svg/feature-svg-1.svg"
                                     alt="One Card For All Your Payments"
                                     class="feature-media__img"
+                                    data-aos="flip-down"
+                                    data-aos-delay="200"
+                                    data-aos-duration="800"
+                                    data-aos-once="true"
                                 />
                             </figure>
-                            <div class="feature-media__income-card">
+                            <div
+                                class="feature-media__income-card"
+                                data-aos="zoom-out-left"
+                                data-aos-delay="500"
+                                data-aos-duration="800"
+                                data-aos-once="true"
+                            >
                                 <div class="feature-media__income-icon">
                                     <svg
                                         width="15"
@@ -464,57 +518,115 @@
                                         src="./assets/img/feature-img-1.png"
                                         alt="Transfer and Deposite Your Money Anytime"
                                         class="feature-media__img--bottom"
+                                        data-aos="flip-right"
+                                        data-aos-delay="200"
+                                        data-aos-duration="800"
+                                        data-aos-once="true"
                                     />
                                 </figure>
-                                <div class="feature-media__choose-card">
+                                <div
+                                    class="feature-media__choose-card"
+                                    data-aos="flip-left"
+                                    data-aos-delay="300"
+                                    data-aos-duration="800"
+                                    data-aos-once="true"
+                                >
                                     <p class="feature-media__choose-title">
                                         Choose payment method:
                                     </p>
                                     <div class="choose-item__icon-wrap">
                                         <!-- item icon 1 -->
-                                        <a href="#!" class="choose-item__icon">
+                                        <a
+                                            href="#!"
+                                            class="choose-item__icon"
+                                            alt="Master Crad"
+                                            data-aos="zoom-in"
+                                            data-aos-delay="600"
+                                            data-aos-duration="800"
+                                            data-aos-once="true"
+                                        >
                                             <img
                                                 src="./assets/icon/master-card.svg"
-                                                alt="Master Crad"
                                             />
                                         </a>
                                         <!-- item icon 2 -->
-                                        <a href="#!" class="choose-item__icon">
+                                        <a
+                                            href="#!"
+                                            class="choose-item__icon"
+                                            data-aos="zoom-in"
+                                            data-aos-delay="650"
+                                            data-aos-duration="800"
+                                            data-aos-once="true"
+                                        >
                                             <img
                                                 src="./assets/icon/maestro.svg"
                                                 alt="Maestro"
                                             />
                                         </a>
                                         <!-- item icon 3 -->
-                                        <a href="#!" class="choose-item__icon">
+                                        <a
+                                            href="#!"
+                                            class="choose-item__icon"
+                                            data-aos="zoom-in"
+                                            data-aos-delay="700"
+                                            data-aos-duration="800"
+                                            data-aos-once="true"
+                                        >
                                             <img
                                                 src="./assets/icon/feature-icon-1.svg"
                                                 alt="feature-icon-1"
                                             />
                                         </a>
                                         <!-- item icon 4 -->
-                                        <a href="#!" class="choose-item__icon">
+                                        <a
+                                            href="#!"
+                                            class="choose-item__icon"
+                                            data-aos="zoom-in"
+                                            data-aos-delay="750"
+                                            data-aos-duration="800"
+                                            data-aos-once="true"
+                                        >
                                             <img
                                                 src="./assets/icon/visa.svg"
                                                 alt="Visa"
                                             />
                                         </a>
                                         <!-- item icon 5 -->
-                                        <a href="#!" class="choose-item__icon">
+                                        <a
+                                            href="#!"
+                                            class="choose-item__icon"
+                                            data-aos="zoom-in"
+                                            data-aos-delay="800"
+                                            data-aos-duration="800"
+                                            data-aos-once="true"
+                                        >
                                             <img
                                                 src="./assets/icon/pay-pal.svg"
                                                 alt="Pay Pal"
                                             />
                                         </a>
                                         <!-- item icon 6 -->
-                                        <a href="#!" class="choose-item__icon">
+                                        <a
+                                            href="#!"
+                                            class="choose-item__icon"
+                                            data-aos="zoom-in"
+                                            data-aos-delay="900"
+                                            data-aos-duration="800"
+                                            data-aos-once="true"
+                                        >
                                             <img
                                                 src="./assets/icon/union.svg"
                                                 alt="Union"
                                             />
                                         </a>
                                     </div>
-                                    <div class="feature-media__money-icon-wrap">
+                                    <div
+                                        class="feature-media__money-icon-wrap"
+                                        data-aos="zoom-in"
+                                        data-aos-delay="850"
+                                        data-aos-duration="800"
+                                        data-aos-once="true"
+                                    >
                                         <img
                                             src="./assets/icon/feature-icon-2.svg"
                                             alt="feature-icon-2"
@@ -957,21 +1069,37 @@
                             src="./assets/svg/install-decor-1.svg"
                             alt=""
                             class="install__decor"
+                            data-aos="zoom-out-up"
+                            data-aos-delay="200"
+                            data-aos-duration="800"
+                            data-aos-once="true"
                         />
                         <img
                             src="./assets/svg/install-decor-1.svg"
                             alt=""
                             class="install__decor"
+                            data-aos="zoom-out-right"
+                            data-aos-delay="300"
+                            data-aos-duration="800"
+                            data-aos-once="true"
                         />
                         <img
                             src="./assets/svg/install-decor-1.svg"
                             alt=""
                             class="install__decor"
+                            data-aos="zoom-out-down"
+                            data-aos-delay="250"
+                            data-aos-duration="800"
+                            data-aos-once="true"
                         />
                         <img
                             src="./assets/svg/install-decor-1.svg"
                             alt=""
                             class="install__decor"
+                            data-aos="zoom-out-left"
+                            data-aos-delay="350"
+                            data-aos-duration="800"
+                            data-aos-once="true"
                         />
                     </div>
                 </div>
@@ -1111,5 +1239,9 @@
                 © 2020 Ligft Media All rights reserved.
             </p>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
