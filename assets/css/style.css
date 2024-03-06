@@ -88,7 +88,7 @@ a {
     display: inline-block;
     width: 18px;
     height: 2px;
-    background: #696d77;
+    background: currentColor;
 }
 
 /* Header */
@@ -889,6 +889,8 @@ a {
     cursor: pointer;
 }
 
+/* Blog */
+
 .blog {
     padding: 120px 0 40px;
 }
@@ -988,4 +990,91 @@ a {
 
 .blog-item:hover .blog-item__img {
     scale: 1.1;
+}
+
+/* Install */
+
+.install {
+    padding: 120px 0 100px;
+}
+
+.install__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px;
+    border-radius: 24px;
+    background: #7264d6;
+}
+
+.install__label {
+    color: #fff;
+}
+
+.install__heading {
+    margin-top: 12px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.25; /* 125% */
+}
+
+.install__desc {
+    margin-top: 18px;
+    width: 435px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.install__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.install-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    padding: 18px 30px;
+    width: 182px;
+    height: 64px;
+    border-radius: 6px;
+    background: #fff;
+    transition: 0.2s;
+}
+
+.install-btn:hover {
+    opacity: 0.9;
+}
+
+.install-btn__icon {
+    flex-shrink: 0;
+}
+
+.install__decor {
+    position: absolute;
+}
+
+.install__decor:nth-of-type(1) {
+    top: 49px;
+    left: 112px;
+}
+
+.install__decor:nth-of-type(2) {
+    bottom: 49px;
+    left: 166px;
+}
+.install__decor:nth-of-type(3) {
+    top: 49px;
+    right: 112px;
+}
+.install__decor:nth-of-type(4) {
+    bottom: 49px;
+    right: 166px;
 }
